@@ -1,0 +1,16 @@
+App.xbf
+Microsoft.UI.Xaml\DensityStyles\Compact.xbf
+Styles\_Colors.xbf
+Styles\_FontSizes.xbf
+Styles\_Thickness.xbf
+Styles\Page.xbf
+Styles\TextBlock.xbf
+Views\AddItemDialog.xbf
+Views\ContentDialog1.xbf
+Views\InventoryPage.xbf
+Views\MainPage.xbf
+Views\ProductPage.xbf
+Views\SearchPage.xbf
+Views\SettingsPage.xbf
+Views\ShellPage.xbf
+Views\TelerikInventoryPage.xbf

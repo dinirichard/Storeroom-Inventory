@@ -1,0 +1,88 @@
+﻿<ContentDialog
+    x:Class="App4.Views.ContentDialog1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:winui="using:Microsoft.UI.Xaml.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App4.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
+    
+    Style="{StaticResource PageStyle}"
+    xmlns:telerikInput="using:Telerik.UI.Xaml.Controls.Input"
+    mc:Ignorable="d"
+    Loaded="ContentDialog_Loaded"
+    Title="TITLE"
+    DefaultButton="Primary"
+    PrimaryButtonText="Button1"
+    SecondaryButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick"
+    MaxHeight="380"
+    MaxWidth="550"
+    Margin="500,295,0,0">
+
+    <Grid Width="500" Height="380">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Left">
+            <TextBlock x:Name="name" Text="Name"  Margin="0,0,10,10"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Left">
+            <TextBox x:Name="ItemName" PlaceholderText="ActualName" IsReadOnly="True"  Margin="10,0,0,10"/>
+        </StackPanel>
+
+        
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Left">
+            <TextBlock Text="Location"  Margin="0,0,10,10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Left">
+            <TextBox x:Name="LocationName" PlaceholderText="LocationName" IsReadOnly="True"  Margin="10,0,0,10"/>
+        </StackPanel>
+
+        
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Left">
+            <TextBlock Text="Barcode"  Margin="0,0,10,10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Left">
+            <TextBox x:Name="BarcodeName" PlaceholderText="Barcode_No" Width="180"  Margin="10,0,0,30"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Left">
+            <TextBlock Text="Personel Id"  Margin="0,0,10,10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Stretch">
+            <TextBox x:Name="PersonelId" PlaceholderText="Personel Id Scan"  Margin="0,0,0,15" Width="200"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Stretch">
+            <Button x:Name="Personel_btn" Content="Scan" Margin="0,0,0,15" Click="Personel_btn_Click"></Button>
+        </StackPanel>
+
+        
+        <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Center">
+            <TextBlock Text="Quantity" FontWeight="Bold" Margin="0,0,10,10"/>
+        </StackPanel>
+
+        <StackPanel x:Name="StackQuantity" Grid.Column="2" Grid.Row="1" Orientation="Horizontal" Margin="30,0,0,0" HorizontalAlignment="Left">
+            <TextBlock Text="Quantity"  Margin="0,0,10,10"/>
+            <TextBox x:Name="QuantityName" Text="50?"  Margin="40,0,0,10" IsReadOnly="True"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="2" Orientation="Horizontal" Margin="15,0,0,0" HorizontalAlignment="Left">
+            <!--<telerikInput:RadNumericBox/>-->
+            <telerikInput:RadNumericBox x:Name="Amount" Header="*Number of Items to Collect" ValueChanged="RadNumericBox_ValueChanged" ValueFormat="{}{0,0:N0}" />
+        </StackPanel>
+
+    </Grid>
+</ContentDialog>

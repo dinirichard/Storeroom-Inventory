@@ -1,0 +1,5 @@
+MainPackage=C:\Users\Dini Home\source\repos\App4\App4\bin\ARM\Debug\App4_1.0.0.0_ARM_Debug.appx
+SymbolPackage=C:\Users\Dini Home\source\repos\App4\App4\AppPackages\App4_1.0.0.0_Debug_Test\App4_1.0.0.0_ARM_Debug.appxsym
+ResourcePack=C:\Users\Dini Home\source\repos\App4\App4\bin\ARM\Debug\App4_1.0.0.0_scale-140.appx
+ResourcePack=C:\Users\Dini Home\source\repos\App4\App4\bin\ARM\Debug\App4_1.0.0.0_scale-180.appx
+ResourcePack=C:\Users\Dini Home\source\repos\App4\App4\bin\ARM\Debug\App4_1.0.0.0_scale-240.appx

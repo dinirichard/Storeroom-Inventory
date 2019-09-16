@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Dini Home\source\repos\App4\App4\bin\x86\Debug\App4_1.0.0.0_x86_Debug.appx
+SymbolPackage=C:\Users\Dini Home\source\repos\App4\App4\AppPackages\App4_1.0.0.0_Debug_Test\App4_1.0.0.0_x86_Debug.appxsym

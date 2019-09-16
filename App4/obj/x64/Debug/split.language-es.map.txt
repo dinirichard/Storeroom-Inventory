@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-es"
+"ResourceDimensions"		"language-es-es"
+
+[Files]
+"C:\Users\Dini Home\source\repos\App4\App4\obj\x64\Debug\split.language-es.pri"			"resources.pri"
