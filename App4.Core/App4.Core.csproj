@@ -10,7 +10,7 @@
      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.11" />
      <PackageReference Include="Microsoft.NETCore.Targets.UniversalWindowsPlatform" Version="5.0.0" />
-     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
      <PackageReference Include="Prism.Core" Version="7.2.0.1367" />
      <PackageReference Include="Prism.Validation" Version="1.3.0" />
      <PackageReference Include="runtime.win-arm64.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
